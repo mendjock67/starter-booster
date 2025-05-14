@@ -1,84 +1,101 @@
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Le Starter Booster des Fondateurs Malins</title>
   <style>
     body {
-      margin: 0;
       font-family: Arial, sans-serif;
-      background: #f9f9f9;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
       color: #333;
     }
     .container {
-      max-width: 600px;
-      margin: 0 auto;
-      padding: 1.5rem;
+      max-width: 480px;
+      margin: auto;
+      padding: 20px;
       background: #fff;
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border-radius: 8px;
+      margin-top: 20px;
+      animation: fadeIn 1s ease-in-out;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
     }
     .cover {
       width: 100%;
-      border-radius: 12px;
+      height: auto;
+      margin-bottom: 20px;
     }
     h1 {
-      font-size: 1.8rem;
-      color: #d35400;
-      margin-top: 1rem;
+      color: #e95c0f;
+      font-size: 24px;
     }
-    .subtitle {
-      font-size: 1.1rem;
-      margin: 0.5rem 0;
+    h2 {
+      font-size: 18px;
+      color: #555;
     }
     .price {
-      font-size: 1.3rem;
-      color: #27ae60;
-      margin: 1rem 0;
+      color: green;
+      font-size: 18px;
+      font-weight: bold;
+      margin: 15px 0;
     }
     .instructions {
-      background: #f0f0f0;
-      padding: 1rem;
-      border-radius: 8px;
-      margin: 1rem 0;
+      background: #f1f1f1;
+      padding: 15px;
+      border-radius: 6px;
+      margin-bottom: 20px;
     }
-    .whatsapp-button {
+    .button {
       display: block;
-      background-color: #25d366;
+      background: #25D366;
       color: white;
       text-align: center;
-      padding: 1rem;
+      padding: 15px;
       border-radius: 8px;
       text-decoration: none;
       font-weight: bold;
-      margin-top: 1rem;
     }
     .footer {
       text-align: center;
-      font-size: 0.85rem;
-      color: #888;
-      margin-top: 2rem;
+      font-size: 12px;
+      color: #999;
+      margin-top: 20px;
     }
   </style>
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-KVHNV47525"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-KVHNV47525');
+  </script>
 </head>
 <body>
   <div class="container">
-    <img src="cover.jpg" alt="Couverture du livre" class="cover">
+    <img src="couverture-livre.jpg" alt="Couverture du livre" class="cover" />
     <h1>Le Starter Booster des Fondateurs Malins</h1>
-    <p class="subtitle">Un guide stratégique pour démarrer son projet</p>
+    <h2>Un guide stratégique pour démarrer son projet</h2>
     <p><strong>Auteur :</strong> Blaise Loti MENDJOCK BENG</p>
     <p class="price">Disponible pour 5 000 FCFA</p>
 
     <div class="instructions">
       <p>1. Envoyez <strong>5 000 FCFA</strong> via <strong>Orange Money</strong> au numéro :</p>
-      <p><strong>+237 696 47 45 42</strong> (également sur WhatsApp)</p>
-      <p>2. Envoyez la preuve de paiement et votre email par WhatsApp pour recevoir votre eBook.</p>
+      <p><strong>+237 696 47 45 42</strong> (disponible aussi sur WhatsApp)</p>
+      <p>2. Envoyez la <strong>preuve de paiement</strong> et votre <strong>email</strong> via WhatsApp pour recevoir votre eBook.</p>
     </div>
 
-    <a href="https://wa.me/237696474542" class="whatsapp-button">Commander sur WhatsApp</a>
+    <a class="button" href="https://wa.me/237696474542" target="_blank">Commander sur WhatsApp</a>
 
     <div class="footer">
-      &copy; 2025 Blaise Loti MENDJOCK — Tous droits réservés.
+      © 2025 Blaise Loti MENDJOCK — Tous droits réservés.
     </div>
   </div>
 </body>
